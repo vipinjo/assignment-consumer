@@ -1,4 +1,4 @@
-package com.vipinjoseph.assignmentconsumer;
+package com.vipinjoseph.assignmentconsumer.service;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -8,7 +8,10 @@ import java.util.Queue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.vipinjoseph.assignmentconsumer.entity.Values;
 import com.vipinjoseph.assignmentconsumer.exceptions.ServiceException;
+import com.vipinjoseph.assignmentconsumer.repository.ValuesRepository;
+import com.vipinjoseph.assignmentconsumer.utils.GcdUtils;
 
 @Service
 public class ValueServices {

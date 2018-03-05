@@ -1,4 +1,4 @@
-package com.vipinjoseph.assignmentconsumer;
+package com.vipinjoseph.assignmentconsumer.utils;
 
 public class GcdUtils {
 	

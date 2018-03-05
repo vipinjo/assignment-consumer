@@ -1,4 +1,4 @@
-package com.vipinjoseph.assignmentconsumer;
+package com.vipinjoseph.assignmentconsumer.config;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -14,7 +14,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
-import com.vipinjoseph.assignmentconsumer.config.UTPasswordCallback;
+import com.vipinjoseph.assignmentconsumer.controller.soap.SoapController;
+import com.vipinjoseph.assignmentconsumer.service.ValueServices;
 
 @Configuration
 public class WebServiceConfig {

@@ -1,4 +1,4 @@
-package com.vipinjoseph.assignmentconsumer;
+package com.vipinjoseph.assignmentconsumer.jms;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import com.vipinjoseph.assignmentconsumer.entity.Values;
+import com.vipinjoseph.assignmentconsumer.service.ValueServices;
 
 @Component
 public class ValueProcessor {

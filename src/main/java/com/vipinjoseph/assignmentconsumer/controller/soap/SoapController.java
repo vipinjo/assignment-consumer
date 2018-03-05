@@ -1,4 +1,4 @@
-package com.vipinjoseph.assignmentconsumer;
+package com.vipinjoseph.assignmentconsumer.controller.soap;
 
 import java.util.List;
 
@@ -8,6 +8,7 @@ import javax.jws.WebService;
 import org.apache.cxf.feature.Features;
 
 import com.vipinjoseph.assignmentconsumer.exceptions.ServiceException;
+import com.vipinjoseph.assignmentconsumer.service.ValueServices;
 
 @WebService
 @Features(features = "org.apache.cxf.feature.LoggingFeature")
