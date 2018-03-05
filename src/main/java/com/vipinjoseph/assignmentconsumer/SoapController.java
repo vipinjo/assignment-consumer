@@ -7,6 +7,8 @@ import javax.jws.WebService;
 
 import org.apache.cxf.feature.Features;
 
+import com.vipinjoseph.assignmentconsumer.exceptions.ServiceException;
+
 @WebService
 @Features(features = "org.apache.cxf.feature.LoggingFeature")
 public class SoapController {
@@ -23,8 +25,7 @@ public class SoapController {
 	}
 	
 	@WebMethod
-	public Values getGcd() {
-		//TODO: Throw soap fault if no values exists
+	public Integer getGcd() throws ServiceException {
 		return valueService.getGcd();
 	}
 	

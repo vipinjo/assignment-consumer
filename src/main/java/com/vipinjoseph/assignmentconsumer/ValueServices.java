@@ -8,6 +8,8 @@ import java.util.Queue;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.vipinjoseph.assignmentconsumer.exceptions.ServiceException;
+
 @Service
 public class ValueServices {
 	
@@ -43,12 +45,18 @@ public class ValueServices {
 		return gcdList;
 	}
 	
-	public Values getGcd() {
+	public int getGcd() throws ServiceException {
 		Values values = null;
+		int gcd = 0;
 		if (!queue.isEmpty()) {
 		    values = queue.remove();
 		}
-		return values;
+		if (values != null) {
+		    gcd = GcdUtils.getGCD(values.getValueOne(), values.getValueTwo());
+		} else {
+			throw new ServiceException("No Gcd is available");
+		}
+		return gcd;
 	}
 	
 	public int getGcdSum() {
